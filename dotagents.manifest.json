@@ -1,0 +1,16 @@
+{
+  "schema": "dotagents.manifest/v1",
+  "name": "computer-use-agent",
+  "owner": "pmcr-o",
+  "description": "Computer-use domain orchestrator for recording and replaying checked UI/terminal procedures through registered adapters.",
+  "invocationField": "plugin",
+  "plugins": [
+    {
+      "name": "computer-use",
+      "source": "./.pmcro/plugins/computer-use",
+      "description": "computer-use capabilities owned by computer-use-agent"
+    }
+  ],
+  "canonical": ".pmcro",
+  "projection": ".agents"
+}

@@ -1,0 +1,7 @@
+{
+  "registered": true,
+  "agent": "computer-use-recorder-agent",
+  "plugin": "computer-use",
+  "description": "Record a reusable computer-use procedure candidate from ordered UI steps and trail references. Does not execute UI actions.",
+  "skill": "record-procedure"
+}

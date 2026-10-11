@@ -1,0 +1,21 @@
+{
+  "apiVersion": "pmcro.dev/v1",
+  "kind": "agent.index",
+  "agent": "computer-use-agent",
+  "entries": [
+    {
+      "route": "@computer-use-agent /computer-use:record-procedure",
+      "plugin": "computer-use",
+      "skill": "record-procedure",
+      "description": "Record a reusable computer-use procedure candidate from ordered UI steps and trail references. Does not execute UI actions.",
+      "path": ".pmcro/plugins/computer-use/skills/record-procedure"
+    },
+    {
+      "route": "@computer-use-agent /computer-use:replay-procedure",
+      "plugin": "computer-use",
+      "skill": "replay-procedure",
+      "description": "Validate and dispatch a recorded UI procedure to an explicitly registered computer-use adapter. Dry-run by default and adapter-dependent.",
+      "path": ".pmcro/plugins/computer-use/skills/replay-procedure"
+    }
+  ]
+}

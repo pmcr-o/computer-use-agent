@@ -1,0 +1,7 @@
+{
+  "registered": true,
+  "agent": "computer-use-replay-agent",
+  "plugin": "computer-use",
+  "description": "Validate and dispatch a recorded UI procedure to an explicitly registered computer-use adapter. Dry-run by default and adapter-dependent.",
+  "skill": "replay-procedure"
+}

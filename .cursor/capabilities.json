@@ -1,0 +1,21 @@
+{
+  "schema": "pmcro.capabilities/v1",
+  "agent": "computer-use-agent",
+  "executionRule": "registered AND runtime-present AND authorized",
+  "manualParity": {
+    "required": true,
+    "rule": "agent and manual terminal use the same scripts with the same arguments, exit codes, and evidence"
+  },
+  "capabilities": [
+    {
+      "plugin": "computer-use",
+      "skill": "record-procedure",
+      "route": "@computer-use-agent /computer-use:record-procedure"
+    },
+    {
+      "plugin": "computer-use",
+      "skill": "replay-procedure",
+      "route": "@computer-use-agent /computer-use:replay-procedure"
+    }
+  ]
+}

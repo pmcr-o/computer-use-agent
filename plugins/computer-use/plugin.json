@@ -1,0 +1,8 @@
+{
+  "name": "computer-use",
+  "version": "0.1.0",
+  "description": "computer-use PMCR-O domain capabilities",
+  "skills": [
+    "./skills/"
+  ]
+}
